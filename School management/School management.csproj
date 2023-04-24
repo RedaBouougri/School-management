@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>School_management</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bunifu.Charts.WinForms" Version="2.0.0" />
+    <PackageReference Include="Bunifu.UI.WinForms" Version="6.0.2" />
+    <PackageReference Include="FontAwesome.Sharp" Version="6.2.1" />
+    <PackageReference Include="Guna.Charts.WinForms" Version="1.0.4" />
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+    <PackageReference Include="MySql.Data" Version="8.0.31" />
+    <PackageReference Include="Plotly" Version="1.5.1" />
+    <PackageReference Include="ScottPlot.WinForms" Version="4.1.60" />
+    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="20.4.0.43" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
